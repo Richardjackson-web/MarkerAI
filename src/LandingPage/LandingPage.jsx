@@ -339,31 +339,47 @@ function LandingPage() {
                             <img src={Logo} alt="" className="" />
                             <p className="font-istock text-white-0">MARKER-AI</p>
                             <p className="font-istock flex text-xs text-white-0"><GoDash className="mt-0.5" /> AI FOR EDUCATORS<GoDash className="mt-0.5" /></p>
-                            <p className="font-istock flex text-xs text-white-0"><AiOutlineCopyright className="mt-0.5" /> 2025. Marker-AI. All Rights Reserved.</p>
+                            <p className="font-istock flex text-xs mt-5 text-white-0"><AiOutlineCopyright className="mt-0.5" /> 2025. Marker-AI. All Rights Reserved.</p>
                         </div>
                         <div className="flex basis-1/2 ml-auto text-white-0 font-lexend font-extralight text-xs">
                             <div>
-                                <span>Product</span><br />
+                                <span className="font-bold">Product</span><br /><br />
                                 <span>Features</span><br />
                                 <span>How it works</span><br />
                                 <span>Pricing</span><br />
                                 <span>Testimonials</span>
                             </div>
-                            <div>
-                                <p>Contact Us</p>
-                                <span className="inline-flex"><CiMail className="mt-1" /> admin@markerai.org</span><br />
-                                <span className="inline-flex"><FaWhatsapp className="mt-1" /> +234 706 856 6789</span>
+                            <div className="mx-20">
+                                <p>Contact Us</p><br />
+                                <span className="inline-flex"><CiMail className="mt-1 mr-3" /> admin@markerai.org</span><br />
+                                <span className="inline-flex"><FaWhatsapp className="mt-1 mr-3" /> +234 706 856 6789</span>
                             </div>
                             <div>
-                                <p>Follow Us</p>
+                                <p>Follow Us</p><br />
                                 <div className="flex">
-                                    <FaXTwitter /> <LiaInstagram /> <MdOutlineFacebook />
+                                    <FaXTwitter className="mr-3" /> <LiaInstagram className="mr-3" /> <MdOutlineFacebook className="mr-3" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-
+                    <hr className="text-white-0 my-8" />
+                    <div className="flex flex-row">
+                        <div className="basis-1/2">
+                            <p className="text-white-0 font-lexend font-extralight">Subscribe to our Newsletter</p>
+                        </div>
+                        <div className="items-center justify-center min-h-screen bg-gray-100 basis-1/2">
+                            <div className="relative w-full max-w-sm">
+                                <input
+                                    type="text"
+                                    placeholder="Email"
+                                    className="w-full px-4 py-4 pr-12 text-sm border-white-0 border-2 rounded-lg shadow-sm border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-1000-0 bg-blue1000-0"
+                                />
+                                <button
+                                    type="button"
+                                    className="absolute top-3 right-0 px-4 py-2 mr-2 text-sm font-medium text-blue1000-0 bg-white-0 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                >Subscribe</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
