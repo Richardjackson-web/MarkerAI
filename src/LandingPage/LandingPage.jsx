@@ -350,12 +350,12 @@ function LandingPage() {
                                 <span>Testimonials</span>
                             </div>
                             <div className="mx-20">
-                                <p>Contact Us</p><br />
+                                <p className="font-bold">Contact Us</p><br />
                                 <span className="inline-flex"><CiMail className="mt-1 mr-3" /> admin@markerai.org</span><br />
                                 <span className="inline-flex"><FaWhatsapp className="mt-1 mr-3" /> +234 706 856 6789</span>
                             </div>
                             <div>
-                                <p>Follow Us</p><br />
+                                <p className="font-bold">Follow Us</p><br />
                                 <div className="flex">
                                     <FaXTwitter className="mr-3" /> <LiaInstagram className="mr-3" /> <MdOutlineFacebook className="mr-3" />
                                 </div>
@@ -367,7 +367,7 @@ function LandingPage() {
                         <div className="basis-1/2">
                             <p className="text-white-0 font-lexend font-extralight">Subscribe to our Newsletter</p>
                         </div>
-                        <div className="items-center justify-center min-h-screen bg-gray-100 basis-1/2">
+                        <div className="items-center justify-center bg-gray-100 basis-1/2">
                             <div className="relative w-full max-w-sm">
                                 <input
                                     type="text"
