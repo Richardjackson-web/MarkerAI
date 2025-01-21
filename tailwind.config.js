@@ -6,7 +6,8 @@ export default {
     extend: {
       fontFamily:{
         lexend:["Lexend"],
-        istock:["Istok+web"]
+        istock:["Istok+web"],
+        DMSans:["DM+Sans"]
       },
     },
     colors: {
@@ -18,7 +19,9 @@ export default {
       blue200:["#CCD3DA"],
       arr:["#3D66FB"],
       gray:["#E5E9ED"],
-      tert:["#9B8896"]
+      tert:["#9B8896"],
+      blue500:["#8090A3"],
+      blue400:["#99A6B5"]
     },
   },
   plugins: [],
