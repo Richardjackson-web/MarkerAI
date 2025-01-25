@@ -21,7 +21,8 @@ export default {
       gray:["#E5E9ED"],
       tert:["#9B8896"],
       blue500:["#8090A3"],
-      blue400:["#99A6B5"]
+      blue400:["#99A6B5"], 
+      purple400:["#160067"]
     },
   },
   plugins: [],
