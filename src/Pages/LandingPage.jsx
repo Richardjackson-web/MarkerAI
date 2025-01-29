@@ -59,17 +59,17 @@ function LandingPage() {
             <div className="mx-9">
                 <img src={Hero} className="w-full h-full" alt="" />
             </div>
-           <div className="mx-10">
-                <h1 className="text-grad-0 font-lexend font-normal my-5 text-4xl">Grade Assessments Faster with AI.</h1>
-                <p className="text-grad-0 font-lexend font-normal my-7 text-sm">Transform your grading process with our AI-powered assessment tool. Save time, maintain consistency, and focus more on teaching.</p>
+           <div className="mx-7">
+                <h1 className="text-grad-0 font-lexend font-normal my-5 text-3xl">Grade Assessments Faster with AI.</h1>
+                <p className="text-grad-0 font-lexend font-normal my-5 text-sm">Transform your grading process with our AI-powered assessment tool. Save time, maintain consistency, and focus more on teaching.</p>
                 <div className="text-center">
                     <Link to="/signin">
-                    <button className="text-white-0 font-lexend inline-flex items-center bg-blue1000-0 mr-2 py-2 px-8 rounded-2xl">
+                    <button className="text-white-0 font-lexend inline-flex items-center bg-blue1000-0 py-2 px-8 mr-3 rounded-2xl">
                     Get Started
                     </button>
                     </Link>
                     <Link to="/signup">
-                    <button className="font-lexend text-blue1000-0 inline-flex items-center bg-amber-500 py-2 px-10 mx-2 border-2 rounded-2xl">
+                    <button className="font-lexend text-blue1000-0 inline-flex items-center bg-amber-500 py-2 px-10 border-2 rounded-2xl">
                     Sign In
                     </button>
                     </Link>
@@ -291,15 +291,15 @@ function LandingPage() {
 
                 {/* Footer */}
 
-                <div className="bg-blue1000-0 mt-32 py-7 px-20">
+                <div className="bg-blue1000-0 mt-32 py-7 md:px-20 px-7">
                     <div className="md:flex flex-row">
                         <div className="basis-1/2 md:mb-0 mb-5">
                             <img src={Logo} alt="" className="w-16" />
                             <p className="font-istock text-white-0">MARKER-AI</p>
-                            <p className="font-istock flex text-[6px] text-white-0"><GoDash className="mt-0.5" /> AI FOR EDUCATORS<GoDash className="mt-0.5" /></p>
-                            <p className="font-istock flex text-[10px] mt-5 text-white-0"><AiOutlineCopyright className="mt-0.5" /> 2025. Marker-AI. All Rights Reserved.</p>
+                            <p className="font-istock flex md:text-[6px] text-[8px] text-white-0"><GoDash className="mt-0.5" /> AI FOR EDUCATORS<GoDash className="mt-0.5" /></p>
+                            <p className="font-istock flex md:text-[10px] text-[12px] mt-5 text-white-0"><AiOutlineCopyright className="mt-0.5" /> 2025. Marker-AI. All Rights Reserved.</p>
                         </div>
-                        <div className="md:flex flex-row basis-1/2 ml-auto text-white-0 font-lexend font-extralight text-xs">
+                        <div className="md:flex flex-row basis-1/2 ml-auto text-white-0 font-lexend font-extralight md:text-xs text-lg">
                             <div className="basis-1/3">
                                 <span className="font-bold">Product</span><br className="hidden md:block" /><br />
                                 <span>Features</span><br />
@@ -323,7 +323,7 @@ function LandingPage() {
                     <hr className="text-white-0 my-8" />
                     <div className="md:flex flex-row">
                         <div className="basis-1/2 mt-5 mb-5 md:mb-0">
-                            <p className="text-white-0 font-lexend font-extralight">Subscribe to our Newsletter</p>
+                            <p className="text-white-0 font-lexend text-lg font-extralight">Subscribe to our Newsletter</p>
                         </div>
                         <div className="items-center justify-center bg-gray-100 basis-1/2">
                             <div className="relative w-full max-w-sm">
