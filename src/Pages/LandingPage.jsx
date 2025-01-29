@@ -2,6 +2,7 @@ import React, { useState} from "react";
 import Logo from '../assets/logo.png'
 import Hero from '../assets/Hero.png'
 import Info from '../assets/info.png'
+import { Link } from 'react-router-dom';
 import { MdSmartToy } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdGrading } from "react-icons/md";
@@ -25,75 +26,26 @@ import { AiOutlineCopyright } from "react-icons/ai";
 
 function LandingPage() {
 
-    const [isOpen, setIsOpen] = useState(false);
-    // const heroImg = "md:mx-16";
-
     return (
-        <>
-        {/* Navigational Bar */}
-        <nav className="flex items-center justify-between flex-wrap p-6 md:mx-14">
-     <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-       <img src={Logo} width={50} className="w-120 h-100 mr-2" alt="Logo" />
-       <span className="hidden md:block font-lexend text-blue1000-0">MARKER AI</span>
-     </div>
-     <div className="block lg:hidden">
-       <button
-         onClick={() => setIsOpen(!isOpen)}
-         className="flex items-center px-3 py-2 rounded text-blue1000-0 hover:text-blue1000-0"
-       >
-         <svg
-           className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
-           viewBox="0 0 20 20"
-           xmlns="http://www.w3.org/2000/svg"
-         >
-           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-         </svg>
-         <svg
-           className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
-           viewBox="0 0 20 20"
-           xmlns="http://www.w3.org/2000/svg"
-         >
-           <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-         </svg>
-       </button>
-     </div>
-     <div
-       className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
-     >
-       <div className="text-blue1000-0 lg:flex-grow">
-         <a href="#" className="block font-istock mt-4 lg:inline-block lg:mt-0 mr-4">
-           Features
-         </a>
-         <a href="#" className="block font-istock mt-4 lg:inline-block lg:mt-0 mr-4">
-           How It Works
-         </a>
-         <a href="#" className="block font-istock mt-4 lg:inline-block lg:mt-0 mr-4">
-           Pricing
-         </a>
-       </div>
-       <div>
-         <button className="font-lexend text-blue1000-0 inline-flex items-center bg-amber-500 py-2 px-6 mx-2 border-2 rounded-2xl">
-           Sign In
-         </button>
-         <button className="text-white-0 font-lexend inline-flex items-center bg-blue1000-0 py-2 px-6 rounded-2xl">
-           Get Started
-         </button>
-       </div>
-     </div>
-   </nav>       
-
-        {/* Hero Section */}
-        <div className="hidden md:block">
+        <>  
+        
+        <div className="">
+            {/* Hero Section */}
+        <div className="hidden md:block transform -translate-y-12">
         <div className="md:flex mx-20 flex-row my-28">
            <div className="basis-1/2">
                 <h1 className="text-grad-0 font-lexend font-normal my-5 text-6xl leading-tight">Grade Assessments Faster with AI.</h1>
                 <p className="text-grad-0 font-lexend font-normal my-7 text-base leading-8">Transform your grading process with our AI-powered assessment tool. Save time, maintain consistency, and focus more on teaching.</p>
-                <button className="text-white-0 font-lexend inline-flex items-center bg-blue1000-0 py-2 px-8 rounded-2xl">
+                <Link to="/signup"><button className="text-white-0 font-lexend inline-flex items-center bg-blue1000-0 py-2 px-8 rounded-2xl">
                     Get Started
                 </button>
+                </Link>
+                <Link to="signin">
                 <button className="font-lexend text-blue1000-0 inline-flex items-center bg-amber-500 py-2 px-10 mx-2 border-2 rounded-2xl">
                     Sign In
                 </button>
+                </Link>                
+                
                 
             </div>
                 
@@ -103,7 +55,7 @@ function LandingPage() {
         </div>
         </div>
 
-        <div className="block mt-10 mb-20 md:hidden">
+        <div className="block mb-20 md:hidden">
             <div className="mx-9">
                 <img src={Hero} className="w-full h-full" alt="" />
             </div>
@@ -111,12 +63,16 @@ function LandingPage() {
                 <h1 className="text-grad-0 font-lexend font-normal my-5 text-4xl">Grade Assessments Faster with AI.</h1>
                 <p className="text-grad-0 font-lexend font-normal my-7 text-sm">Transform your grading process with our AI-powered assessment tool. Save time, maintain consistency, and focus more on teaching.</p>
                 <div className="text-center">
+                    <Link to="/signin">
                     <button className="text-white-0 font-lexend inline-flex items-center bg-blue1000-0 mr-2 py-2 px-8 rounded-2xl">
                     Get Started
                     </button>
+                    </Link>
+                    <Link to="/signup">
                     <button className="font-lexend text-blue1000-0 inline-flex items-center bg-amber-500 py-2 px-10 mx-2 border-2 rounded-2xl">
                     Sign In
                     </button>
+                    </Link>
                 </div>
                 
             </div> 
@@ -243,8 +199,8 @@ function LandingPage() {
                 </button>
                     </div>
                 </div>
-                <div className="basis-1/5 lg:relative">
-                    <div className="lg:absolute -top-16 grid place-items-center">
+                <div className="basis-1/5 transform md:-translate-y-10">
+                    <div className="grid place-items-center">
                     <div className="bg-purple-0 text-center py-3 px-20 rounded-t-xl w-80 md:w-full">
                         <p className="text-white-0 font-lexend">Recommended</p>
                     </div>
@@ -290,7 +246,7 @@ function LandingPage() {
 
                 {/* Get In Touch */}
                 <div>
-                    <div className="text-center mt-40">
+                    <div className="text-center mt-20">
                         <button className="font-lexend text-feat-0 inline-flex items-center bg-amber-500 py-2 px-8 mx-2 border-2 border-t-white-0 text-1xl rounded-3xl">Get in touch</button>
                           <h3 className="text-grad-0 font-lexend md:text-3xl text-2xl py-3">Do you need more information?</h3>
                     </div>
@@ -385,6 +341,7 @@ function LandingPage() {
                     </div>
                 </div>
 
+        </div>
         </div>
         
         </>
