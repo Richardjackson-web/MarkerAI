@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import Logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 import Google from '../assets/google.png';
 import Apple from '../assets/apple.png';
 import Signimg from '../assets/signup.png'
@@ -53,10 +54,10 @@ function Signup(){
         <>
             <div className="md:flex flex-row">
                 <div className="basis-1/2">
-                    <div className="flex my-6 items-center flex-shrink-0 text-white md:mr-72 mr-52">
+                    {/* <div className="flex my-6 items-center flex-shrink-0 text-white md:mr-72 mr-52">
                         <img src={Logo} className="w-100 h-100 mx-auto mr-2" alt="Logo" />
                         <span className="font-lexend text-blue1000-0">MARKER AI</span>
-                    </div>
+                    </div> */}
                     <div className="my-6 text-center">
                         <h3 className="font-lexend text-2xl">Create Your Account</h3>
                     </div>
@@ -94,7 +95,7 @@ function Signup(){
                         {message && <p>{message}</p>}
                     </div>
                     <div className="my-3 text-center">
-                        <small className="font-DMSans">Already have an account? <a href="" className="text-blue1000-0">Sign In</a></small>
+                        <small className="font-DMSans">Already have an account? <Link to="/signin"><a href="" className="text-blue1000-0">Sign In</a></Link></small>
                         <p className="mt-3 font-DMSans">Or</p>
                     </div>
                     <div className="md:flex mb-16 text-center justify-center items-center">

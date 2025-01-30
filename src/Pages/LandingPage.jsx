@@ -1,8 +1,11 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Logo from '../assets/logo.png'
 import Hero from '../assets/Hero.png'
-import Info from '../assets/info.png'
+import Info from '../assets/info.png';
+import WorksCarousel from "../Component/WorksCarousel";
+import BenefitCarousel from "../Component/BenefitCarousel";
 import { Link } from 'react-router-dom';
+// import { ChevronLeft, ChevronRight } from "lucide-react";
 import { MdSmartToy } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdGrading } from "react-icons/md";
@@ -26,6 +29,33 @@ import { AiOutlineCopyright } from "react-icons/ai";
 
 function LandingPage() {
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+  
+
+  const totalSlides = 4; // We have 3 static slides
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+  };
+
+  const handleTouchStart = (e) => {
+    e.currentTarget.touchStartX = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchStartX = e.currentTarget.touchStartX;
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    } else if (touchEndX - touchStartX > 50) {
+      prevSlide();
+    }
+  };
+
     return (
         <>  
         
@@ -40,7 +70,7 @@ function LandingPage() {
                     Get Started
                 </button>
                 </Link>
-                <Link to="signin">
+                <Link to="/signin">
                 <button className="font-lexend text-blue1000-0 inline-flex items-center bg-amber-500 py-2 px-10 mx-2 border-2 rounded-2xl">
                     Sign In
                 </button>
@@ -111,8 +141,10 @@ function LandingPage() {
 
 
             {/* How It Works */}
+    
+        <WorksCarousel />
 
-        <div className="text-center mt-20">
+        <div className="hidden md:block text-center mt-20">
             <div>
                 <button className="font-lexend text-feat-0 inline-flex items-center bg-amber-500 py-2 px-8 mx-2 border-2 text-1xl rounded-3xl">How it works</button>
                 <h3 className="text-grad-0 font-lexend md:text-3xl text-2xl py-3">Marker-AI is easy to use</h3>
@@ -145,7 +177,8 @@ function LandingPage() {
 
 
             {/* Benefits */}
-        <div className="mt-20">
+            <BenefitCarousel />
+        <div className="hidden md:block mt-20">
             <div className="text-center">
                 <button className="font-lexend text-feat-0 inline-flex items-center bg-amber-500 py-2 px-8 mx-2 border-2 text-1xl rounded-3xl">Benefits</button>
                 <h3 className="text-grad-0 font-lexend sm:text-3xl text-2xl py-3">Why choose Marker-AI?</h3>
@@ -175,7 +208,7 @@ function LandingPage() {
 
             {/* Pricing */}
 
-            <div className="mt-20">
+            <div className="md:mt-20 mt-7">
             <div className="text-center md:mb-20 mb-10">
                 <button className="font-lexend text-feat-0 inline-flex items-center bg-amber-500 py-2 px-8 mx-2 border-2 border-t-white-0 text-1xl rounded-3xl">Pricing</button>
                 <h3 className="text-grad-0 font-lexend md:text-3xl text-2xl py-3">Choose the right plan for you</h3>
