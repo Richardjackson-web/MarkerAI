@@ -119,20 +119,20 @@ function LandingPage() {
                 <div className="basis-1/3 mb-6">
                     <MdSmartToy className="block mx-auto rounded-full text-5xl text-white-0 p-3 bg-purple-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Smart Recognition</p>
-                    <p className="text-grad-0 text-xs">Advanced AI technology accurately<br /> recognizes and processes handwritten<br /> assessments</p>
+                    <p className="text-grad-0 text-sm">Advanced AI technology accurately<br /> recognizes and processes handwritten<br /> assessments</p>
                     <FaArrowRightLong className="block mx-auto mt-7 text-grad-0" />
                 </div>
                 <div className="basis-1/3 mb-6 mt-14 sm:mt-0">
                     <MdGrading  className="block mx-auto rounded-full text-5xl text-white-0 p-3 bg-purple-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Custom Marking Schemes</p>
-                    <p className="text-grad-0 text-xs">Upload and customize your marking<br /> criteria for consistent grading across all<br /> assessments.</p>
+                    <p className="text-grad-0 text-sm">Upload and customize your marking<br /> criteria for consistent grading across all<br /> assessments.</p>
                     <FaArrowRightLong className="block mx-auto mt-7 text-grad-0" />
 
                 </div>
                 <div className="basis-1/3 mt-14 sm:mt-0">
                     <IoAnalytics className="block mx-auto rounded-full text-5xl text-white-0 p-3 bg-purple-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Analytics Dashboard</p>
-                    <p className="text-grad-0 text-xs">Get detailed insights into student<br /> performance and grading patterns.</p>
+                    <p className="text-grad-0 text-sm">Get detailed insights into student<br /> performance and grading patterns.</p>
                     <FaArrowRightLong className="block mx-auto mt-7 text-grad-0" />
                 </div>
             </div>
@@ -153,23 +153,23 @@ function LandingPage() {
                 <div className="md:basis-1/4 basis1/2 mb-6">
                     <GrUploadOption className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Upload</p>
-                    <p className="text-grad-0 text-xs">Scan and upload handwritten<br /> assessments.</p>
+                    <p className="text-grad-0 text-sm">Scan and upload handwritten<br /> assessments.</p>
                 </div>
                 <div className="md:basis-1/4 basis-1/2 mb-6 mt-14 sm:mt-0">
                     <MdGrading  className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Set Criteria</p>
-                    <p className="text-grad-0 text-xs">Define your marking scheme</p>
+                    <p className="text-grad-0 text-sm">Define your marking scheme</p>
 
                 </div>
                 <div className="md:basis-1/4 basis-1/2 mb-6 mt-14 sm:mt-0">
                     <MdOutlineSmartToy className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Grading</p>
-                    <p className="text-grad-0 text-xs">Let AI grade the assessments.</p>
+                    <p className="text-grad-0 text-sm">Let AI grade the assessments.</p>
                 </div>
                 <div className="md:basis-1/4 basis-1/2 mb-6 mt-14 sm:mt-0">
                     <MdOutlineRateReview className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Review</p>
-                    <p className="text-grad-0 text-xs">Review and finalize grades.</p>
+                    <p className="text-grad-0 text-sm">Review and finalize grades.</p>
                 </div>
             </div>
         </div>
@@ -187,18 +187,18 @@ function LandingPage() {
                 <div className="basis-1/3">
                     <BiSolidTimeFive className="rounded-full text-5xl text-white-0 p-3 bg-purple-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Ease, efficiency and time-saving</p>
-                    <p className="text-grad-0 text-xs">Marker-AI takes the some workload<br /> off you and frees you up to focus in.</p>
+                    <p className="text-grad-0 text-sm">Marker-AI takes the some workload<br /> off you and frees you up to focus in.</p>
                 </div>
                 <div className="basis-1/3 mt-10 md:mt-0">
                     <FaCheckSquare  className="rounded-full text-5xl text-white-0 p-3 bg-purple-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Accuracy and fairness</p>
-                    <p className="text-grad-0 text-xs">Ensures fair and accurate grading<br /> by removing human bias and error.</p>
+                    <p className="text-grad-0 text-sm">Ensures fair and accurate grading<br /> by removing human bias and error.</p>
 
                 </div>
                 <div className="basis-1/3 mt-10 md:mt-0">
                     <VscFeedback className="rounded-full text-5xl text-white-0 p-3 bg-purple-0" />
                     <p className="text-grad-0 font-medium my-3 text-lg">Insights and feedback</p>
-                    <p className="text-grad-0 text-xs">Receive insights and feedback on<br /> each test you can share with your student.</p>
+                    <p className="text-grad-0 text-sm">Receive insights and feedback on<br /> each test you can share with your student.</p>
                 </div>
             </div>
         </div>

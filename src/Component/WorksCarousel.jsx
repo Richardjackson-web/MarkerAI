@@ -57,7 +57,7 @@ function WorksCarousel(){
                 <div className="md:basis-1/4 basis1/2 mb-6">
                             <GrUploadOption className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                             <p className="text-grad-0 font-medium my-3 text-lg">Upload</p>
-                            <p className="text-grad-0 text-xs">Scan and upload handwritten<br /> assessments.</p>
+                            <p className="text-grad-0 text-sm">Scan and upload handwritten<br /> assessments.</p>
                         </div>
                 </div>
         
@@ -66,7 +66,7 @@ function WorksCarousel(){
                 <div className="md:basis-1/4 basis-1/2 mb-6 sm:mt-0">
                             <MdGrading  className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                             <p className="text-grad-0 font-medium my-3 text-lg">Set Criteria</p>
-                            <p className="text-grad-0 text-xs">Define your marking scheme</p>
+                            <p className="text-grad-0 text-sm">Define your marking scheme</p>
         
                         </div>
                 </div>
@@ -76,7 +76,7 @@ function WorksCarousel(){
                 <div className="md:basis-1/4 basis-1/2 mb-6 sm:mt-0">
                             <MdOutlineSmartToy className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                             <p className="text-grad-0 font-medium my-3 text-lg">Grading</p>
-                            <p className="text-grad-0 text-xs">Let AI grade the assessments.</p>
+                            <p className="text-grad-0 text-sm">Let AI grade the assessments.</p>
                         </div>
                 </div>
                         {/* Slide 4 */}
@@ -84,7 +84,7 @@ function WorksCarousel(){
                         <div className="md:basis-1/4 basis-1/2 mb-6 sm:mt-0">
                             <MdOutlineRateReview className="block mx-auto rounded-full text-5xl text-purple-0 p-3 bg-blue200-0" />
                             <p className="text-grad-0 font-medium my-3 text-lg">Review</p>
-                            <p className="text-grad-0 text-xs">Review and finalize grades.</p>
+                            <p className="text-grad-0 text-sm">Review and finalize grades.</p>
                         </div>
                 </div>
               </div>
