@@ -8,13 +8,15 @@ const Layout = () => {
   return (
     <div>
 
-      <div style={{ display: "flex" }}>
+      <div className="flex flex-row">
         {/* Sidebar on the left */}
-        <Sidebar />
+        <div className="basis-[20%]">
+          <Sidebar />
+        </div>
         {/* Main content area */}
-        <main style={{ marginLeft: "250px", padding: "20px", width: "100%" }}>
+        <div className="basis-[80%]">
         <Outlet />
-        </main>
+        </div>
       </div>
     </div>
   );
