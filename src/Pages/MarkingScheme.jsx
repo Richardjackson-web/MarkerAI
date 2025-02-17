@@ -1,5 +1,7 @@
 import React from "react";
-
+import NewMarkingScheme from "./NewMarkingScheme";
+import NewAssessment from "./NewAssessment";
+import NewAssessmentOverlay from "./NewAssessmentOverlay";
 
 
 
@@ -9,8 +11,14 @@ function MarkingScheme(){
     return(
 
         <>
-            <h1>This is the marking scheme.</h1>
-        
+
+            <div className="px-14">
+                <NewAssessment />
+                <NewAssessmentOverlay />
+                <NewMarkingScheme />
+
+            </div>
+            
         </>
     )
 }

@@ -14,8 +14,8 @@ function Sidebar(){
 
     return(
         <>
-        <div className="px-[15%] pt-14 border rounded-lg border-blue300-0 h-screen">
-                <div className="font-lexend text-blue1000-0">
+        <div className="md:px-[15%] pt-14 border rounded-lg border-blue300-0 md:h-screen bg-white-0">
+                <div className="flex md:block font-lexend text-blue1000-0">
                     <div className="pb-7">
                         <Link to="/dashboard"><a className="flex" href=""><MdOutlineDashboard className="mt-1 mr-2" /> Dashboard</a></Link>
                     </div>

@@ -10,7 +10,6 @@ function Classes(){
     return(
 
         <>
-
                             <div className="grid grid-cols-3 gap-4 px-10">
                                 <div className="rounded-lg shadow-2xl shadow-grey-0">
                                     <div className="bg-lightBlue-0 py-1.5 px-40 rounded-t-xl w-full md:w-full">

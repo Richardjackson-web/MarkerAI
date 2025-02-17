@@ -8,10 +8,10 @@ const Layout = () => {
   return (
     <div>
 
-      <div className="flex flex-row">
+      <div className="md:flex flex-row">
         {/* Sidebar on the left */}
         <div className="basis-[20%]">
-          <Sidebar />
+          <Sidebar className="" />
         </div>
         {/* Main content area */}
         <div className="basis-[80%]">
