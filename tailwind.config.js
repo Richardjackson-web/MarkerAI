@@ -36,7 +36,9 @@ export default {
       blue700:["#4D647E"],
       lightBlue:["#17B3EB"],
       purple300:["#2F0080"],
-      orange:["#E34E09"]
+      orange:["#E34E09"],
+      blue800:["#334D6C"],
+      grey300:["#B4A1AF"],
     },
   },
   plugins: [],

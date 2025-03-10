@@ -2,6 +2,7 @@ import React from "react";
 import NewMarkingScheme from "./NewMarkingScheme";
 import NewAssessment from "./NewAssessment";
 import NewAssessmentOverlay from "./NewAssessmentOverlay";
+import FullAssessment from "../Component/FullAssessment";
 
 
 
@@ -16,6 +17,7 @@ function MarkingScheme(){
                 <NewAssessment />
                 <NewAssessmentOverlay />
                 <NewMarkingScheme />
+                <FullAssessment />
 
             </div>
             

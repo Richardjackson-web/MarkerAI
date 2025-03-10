@@ -1,8 +1,6 @@
 import React from "react";
 import { FaFolder } from "react-icons/fa";
-import { MdOutlineCancel } from "react-icons/md";import React from "react";
-
-
+import { MdOutlineCancel } from "react-icons/md";
 
 
 function NewAssessment(){

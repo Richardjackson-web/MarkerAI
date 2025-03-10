@@ -69,3 +69,5 @@ function FullAssesment(){
         </>
     )
 }
+
+export default FullAssesment

@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
-import LandingPage from "../Pages/LandingPage";
+// import Navbar from "./Navbar";
+// import LandingPage from "../Pages/LandingPage";
 import { Outlet } from "react-router-dom"; // Outlet renders child routes
 
 const Layout = () => {
