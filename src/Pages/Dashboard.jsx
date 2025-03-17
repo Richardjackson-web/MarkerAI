@@ -14,27 +14,27 @@ function Dashboard(){
         <>
             <div className="dashboard-content">
                 {/* Make it an overflow for mobile */}
-                <div className="grid grid-cols-3">
-                    <div className="px-5 text-center border border-blue1000-0 py-5 mx-6 rounded-lg">
+                <div className="grid md:grid-cols-3 grid-cols-2">
+                    <div className="px-5 col-span-2 md:col-span-1 mb-5 md:mb-0 text-center border border-blue1000-0 py-5 mx-auto rounded-lg w-80 md:w-[25vw]">
                         <div className="flex">
                             <h2 className="font-lexend">Grade New Assessments</h2>
                             <FiUpload className="mt-1 ml-auto" />
                         </div>
-                        <button className="bg-blue1000-0 text-white-0 px-16 rounded-lg mt-6 font-lexend text-sm py-1.5">Upload Files</button>
+                        <button className="bg-blue1000-0 text-white-0 px-16 rounded-lg mt-6 font-lexend md:text-sm text-xs py-1.5">Upload Files</button>
                     </div>
-                    <div className="px-5 text-center border border-blue1000-0 py-5 mx-6 rounded-lg">
+                    <div className="px-5 text-center border border-blue1000-0 py-5 rounded-lg mx-auto md:w-[25vw]">
                         <div className="flex">
                             <h2 className="font-lexend">Marking Scheme</h2>
                             <MdGrading className="mt-1 ml-auto" />
                         </div>
-                        <button className="bg-blue1000-0 text-white-0 px-16 rounded-lg mt-6 font-lexend text-sm py-1.5">Create New</button>
+                        <button className="bg-blue1000-0 text-white-0 px-16 rounded-lg mt-6 font-lexend md:text-sm text-xs py-1.5">Create New</button>
                     </div>
-                    <div className="px-5 text-center border border-blue1000-0 py-5 mx-6 rounded-lg">
+                    <div className="px-5 text-center border border-blue1000-0 py-5 mx-auto rounded-lg md:w-[25vw]">
                         <div className="flex">
                             <h2 className="font-lexend">Batch Upload</h2>
                             <RiStackLine className="mt-1 ml-auto" />
                         </div>
-                        <button className="bg-blue1000-0 text-white-0 px-16 rounded-lg mt-6 font-lexend text-sm py-1.5">Start a new batch</button>
+                        <button className="bg-blue1000-0 text-white-0 px-16 rounded-lg mt-6 font-lexend md:text-sm text-xs py-1.5">Start a new batch</button>
                     </div>
                 </div>
 

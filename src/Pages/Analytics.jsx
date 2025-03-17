@@ -13,8 +13,8 @@ function Analytics() {
   return (
     <>
       <div className="mx-7">
-        <div className="grid grid-cols-3">
-          <div className="px-5 border border-blue300-0 py-5 mx-6 rounded-lg">
+        <div className="grid md:grid-cols-3 grid-cols-2 gap-5">
+          <div className="px-5 border border-blue300-0 py-5 rounded-lg col-span-2 md:col-span-1 w-80 md:w-[25vw] mx-auto">
             <div className="flex">
               <h2 className="font-lexend text-lg text-blue1000-0">
                 Total Students
@@ -25,14 +25,14 @@ function Analytics() {
               2,456
             </p>
           </div>
-          <div className="px-5 border border-blue300-0 py-5 mx-6 rounded-lg">
+          <div className="px-5 border border-blue300-0 py-5 mx-6 rounded-lg md:w-[25vw]">
             <div className="flex">
               <h2 className="font-lexend text-lg text-blue1000-0">
                 Total Assessments
               </h2>
               <MdGrading className="mt-1 ml-auto text-blue1000-0" />
             </div>
-            <p className="text-blue1000-0 mt-6 font-lexend font-semibold text-2xl py-1.5">
+            <p className="text-blue1000-0 mt-6 font-lexend font-semibold text-2xl py-1.5 md:w-[25vw]">
               2,456
             </p>
           </div>
@@ -49,7 +49,7 @@ function Analytics() {
           </div>
         </div>
 
-        <div className="flex flex-row mt-14 mx-7">
+        <div className="md:flex flex-row mt-14 mx-7">
           <div className="basis-1/2"></div>
           <div className="basis-1/2">
             <h2 className="font-lexend text-blue1000-0 text-xl">
